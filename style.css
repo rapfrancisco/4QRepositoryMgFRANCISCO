@@ -1,5 +1,4 @@
 body {
-  display: flex;
   justify-content: center;
   align-items: center;
   min-height: 100vh;
@@ -16,7 +15,6 @@ form {
   width: 400px;
   background: #201f1f;
   padding: 20px;
-  border-radius: 12px;
   color: #eee;
 }
 
