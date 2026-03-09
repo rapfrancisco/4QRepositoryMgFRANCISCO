@@ -1,7 +1,23 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #070707; 
+  margin: 0;
+}
+
+form {
+  background: #282828;
+  padding: 20px;
+  border-radius: 10px;
+  color: #eeeeeee6;
+}
 .star {
   font-size: 30px;
   cursor: pointer;
   color: rgb(184, 177, 177);
+  font-size: 20px;
 }
 .star.active {
   color: rgb(255, 231, 95);
