@@ -1,3 +1,15 @@
+body {
+  background-color: #070707;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+form {
+  background-color: #201f1f;
+  padding: 20px;
+  border-radius: 8px;
+  color: #e4dfdf;
+}
 .star {
   font-size: 30px;
   cursor: pointer;
