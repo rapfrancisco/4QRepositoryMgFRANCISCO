@@ -8,11 +8,13 @@ body {
 }
 
 form {
-  background: #282828;
+  width: 400px;
+  background: #201f1f;
   padding: 20px;
-  border-radius: 10px;
-  color: #eeeeeee6;
+  border-radius: 12px;
+  color: #eee;
 }
+
 .star {
   font-size: 30px;
   cursor: pointer;
