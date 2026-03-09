@@ -41,7 +41,7 @@ function displayMovies() {
     let lelist = document.getElementById("listofmovies");
     lelist.innerHTML = "";
 
-    movies.forEach(function(m)) { //foreach star
+    movies.forEach(function(m) { //foreach star
         let stars = "";
         for (let i = 1; i <= m.rating; i++) 
             stars += "★"; //ungreyed stars
