@@ -33,3 +33,17 @@ function addmovie(){
 
     displayMovies();//updated list of movies
 }
+
+function displayMovies() {
+    let movies = JSON.parse(localStorage.getItem("movies"));
+    if (!movies) return;
+
+    let ;lelist = document.getElementById("listofmovies");
+    lelist.innerHTML = "";
+
+    movies.forEach(function(m) {
+        listDiv.innerHTML += `<p>${m.title} (${m.year}) - ${m.genre} - Rating: ${m.rating}</p>`; //the display of what got stored
+    });
+}
+
+
