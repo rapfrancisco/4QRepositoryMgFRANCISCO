@@ -6,3 +6,8 @@
 .star.active {
   color: rgb(255, 231, 95);
 }
+
+h1 {
+  font-size: 30px;
+  color:azure;
+}
