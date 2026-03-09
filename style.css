@@ -1,19 +1,7 @@
-h1 {
-  font-size: 30px;
-  color:azure;
-}
-
-#listofmovies p {
-  color: white;
-  font-size: 15px;
-  margin: 8px 0;
-}
-
 .star {
   font-size: 30px;
   cursor: pointer;
   color: rgb(184, 177, 177);
-  font-size: 20px;
 }
 .star.active {
   color: rgb(255, 231, 95);

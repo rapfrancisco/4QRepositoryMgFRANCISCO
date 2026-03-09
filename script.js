@@ -25,7 +25,7 @@ function addmovie(){
     let movies = JSON.parse(localStorage.getItem("movies"));
 
     if (!movies) {
-        movies = []; //if no movies yet, start empty array
+        movies = [];
     }
 
     movies.push(movie);
@@ -35,18 +35,14 @@ function addmovie(){
 }
 
 function displayMovies() {
-    let movies = JSON.parse(localStorage.getItem("movies"));//get movies
+    let movies = JSON.parse(localStorage.getItem("movies"));//add
     if (!movies) return;
 
     let lelist = document.getElementById("listofmovies");
     lelist.innerHTML = "";
 
-    movies.forEach(function(m) { //foreach movie
-        let stars = "";
-        for (let i = 1; i <= m.rating; i++) {
-            stars += "★"; //ungreyed stars
-        }
-
-        lelist.innerHTML += `<p>${m.title} (${m.year}) - ${m.genre} <span class="stars">${stars}</span></p>`; //the display of what got stored
+    movies.forEach(function(m) {
+        lelist.innerHTML += `<p>${m.title} (${m.year}) - ${m.genre} - Rating: ${m.rating}</p>`; //the display of what got stored
     });
 }
+
