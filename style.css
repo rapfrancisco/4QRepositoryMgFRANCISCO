@@ -1,4 +1,11 @@
-
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #070707; 
+  margin: 0;
+}
 
 h1 {
   font-size: 30px;
@@ -10,6 +17,12 @@ form {
   background: #201f1f;
   padding: 20px;
   color: #eee;
+}
+
+#listofmovies p {
+  color: white;
+  font-size: 15px;
+  margin: 8px 0;
 }
 
 .star {
