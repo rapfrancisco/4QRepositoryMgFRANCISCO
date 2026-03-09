@@ -1,5 +1,3 @@
-console.log("star", stars.length);
-
 let rating = 0;
 const stars = document.querySelectorAll(".star");
 
@@ -11,7 +9,8 @@ stars.forEach(function(star, ndx) {
     });
   });
 });
-function addmovie(){ //adds movie a user adds
+
+function addmovie(){ 
     let genre = document.getElementById("genie").value;
     let title = document.getElementById("ttl").value;
     let year = document.getElementById("year").value;
@@ -23,9 +22,14 @@ function addmovie(){ //adds movie a user adds
         rating: rating
     };
 
-    let movies = JSON.parse(localStorage.getItem("movies"))|| [];
-    movies.push(movie); //unstringifies and turns into object
+    let movies = JSON.parse(localStorage.getItem("movies"));
 
-    localStorage.setItem("movies", JSON.stringify(movies)); //puts into local storage stringified
+    if (!movies) {
+        movies = [];//empty array
+    }
 
+    movies.push(movie);
+    localStorage.setItem("movies", JSON.stringify(movies));
+
+    displayMovies();//updated list of movies
 }
