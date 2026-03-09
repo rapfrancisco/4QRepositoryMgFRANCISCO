@@ -1,8 +1,7 @@
 let rating = 0;
 const stars = document.querySelectorAll(".star");
 
-stars.
-forEach(function(star, ndx) {
+stars.forEach(function(star, ndx) {
   star.addEventListener("click", function() {
     rating = ndx + 1; //the ndxth number of star
     stars.forEach(function(s, i) {
