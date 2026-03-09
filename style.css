@@ -7,6 +7,11 @@ body {
   margin: 0;
 }
 
+h1 {
+  font-size: 30px;
+  color:azure;
+}
+
 form {
   width: 400px;
   background: #201f1f;
