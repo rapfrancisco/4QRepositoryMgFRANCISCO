@@ -1,3 +1,5 @@
+console.log("star", stars.length);
+
 let rating = 0;
 const stars = document.querySelectorAll(".star");
 
