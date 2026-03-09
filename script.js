@@ -46,3 +46,20 @@ function displayMovies() {
     });
 }
 
+function displayMovies() {
+    let movies = JSON.parse(localStorage.getItem("movies"));//add
+    if (!movies) return;
+
+    let lelist = document.getElementById("listofmovies");
+    lelist.innerHTML = "";
+
+    movies.forEach(function(m)) { //foreach star
+        let stars = "";
+        for (let i = 1; i <= m.rating; i++) 
+            stars += "★"; //ungreyed stars
+        }
+
+    movies.forEach(function(m) {
+        lelist.innerHTML += `<p>${m.title} (${m.year}) - ${m.genre} - Rating: ${m.rating}</p>`; //the display of what got stored
+    });
+}
