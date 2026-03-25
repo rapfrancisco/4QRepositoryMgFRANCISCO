@@ -87,8 +87,17 @@ switch (m.genre) {
     default: 
     color = "yellow"; //for regular star
 }
-lelist.innerHTML += `<p style="color: ${color}">${m.title} (${m.year}) - ${m.genre} <span class="stars">${stars}</span></p>`;
+lelist.innerHTML += `<p style="color: ${color}">${m.title} (${m.year}) - ${m.genre} <span class="stars">${stars}</span><button onclick="deleteMovie('${m.title}')">delete</button></p>`;
 });
 
 window.onload = displayMovies;
+}
+
+function deleteMovie(title) {
+    if (confirm('Are you sure you want to delete "' + title + '"?')) {
+        let movies = JSON.parse(localStorage.getItem("movies")) || [];
+        movies = movies.filter(m => m.title !== title);
+        localStorage.setItem("movies", JSON.stringify(movies));
+        displayMovies(); 
+    }
 }
