@@ -71,7 +71,7 @@ switch (m.genre) {
     case "Comedy": 
     color = "green"; 
     break;
-
+    
     case "Sci-fi": 
     color = "blue"; 
     break;
@@ -82,6 +82,18 @@ switch (m.genre) {
 
     case "Romance": 
     color = "pink"; 
+    break;
+
+    case "Mystery": 
+    color = "black"; 
+    break;
+
+    case "Musical": 
+    color = "white"; 
+    break;
+
+    case "Aninmation": 
+    color = "purple"; 
     break;
 
     default: 
