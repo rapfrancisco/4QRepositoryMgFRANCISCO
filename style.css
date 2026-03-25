@@ -11,9 +11,10 @@ form {
   color: #e4dfdf;
 }
 .star {
-  font-size: 30px;
+  font-size: 67px;
   cursor: pointer;
   color: rgb(184, 177, 177);
+  text-shadow: 0 0 5px #e3c3e3, 0 0 10px #e3c3e3, 0 0 15px #e3c3e3;
 }
 .star.active {
   color: rgb(255, 231, 95);
