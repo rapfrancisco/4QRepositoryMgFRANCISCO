@@ -42,9 +42,9 @@ function addmovie(){
     localStorage.setItem("movies", JSON.stringify(movies)) ;
     document.getElementById("ttl").value = "";
     document.getElementById("year").value = "";
-    document.getElementById("genie").selectedIndex = 0;
-    rating = 0;
-    stars.forEach(s => s.classList.remove("active"));
+    document.getElementById("genie").selectedIndex = 0; //defaulted genre
+    rating = 0;//resets rating
+    stars.forEach(s => s.classList.remove("active")); //CLEARS COLOR
 
     displayMovies();//updated list of movies
 }
