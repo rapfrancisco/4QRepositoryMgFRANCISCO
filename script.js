@@ -28,22 +28,20 @@ function addmovie(){
         movies = [];
     }
 
-    movies.push(movie);
-    localStorage.setItem("movies", JSON.stringify(movies));
+    let oldmovie = movies.find(m => m.title.toLowerCase() === title.toLowerCase());
+
+    if (oldmovie) {
+        //determines whether the stars will be averaged
+        oldmovie.year = year;
+        oldmovie.genre = genre;
+        oldmovie.rating = Math.floor((oldmovie.rating + rating) / 2);
+    } else {
+        movies.push(movie);
+    }
+
+    localStorage.setItem("movies", JSON.stringify(movies)) ;
 
     displayMovies();//updated list of movies
-}
-
-function displayMovies() {
-    let movies = JSON.parse(localStorage.getItem("movies"));//add
-    if (!movies) return;
-
-    let lelist = document.getElementById("listofmovies");
-    lelist.innerHTML = "";
-
-    movies.forEach(function(m) {
-        lelist.innerHTML += `<p>${m.title} (${m.year}) - ${m.genre} - Rating: ${m.rating}</p>`; //the display of what got stored
-    });
 }
 
 function displayMovies() {
@@ -59,6 +57,33 @@ function displayMovies() {
         stars += "★"; //ungreyed stars
     }
 
-    lelist.innerHTML += `<p>${m.title} (${m.year}) - ${m.genre} <span class="stars">${stars}</span></p>`; //the display of what got stored
+let color = ""; //themes !!
+switch (m.genre) {
+    case "Horror": 
+    color = "red"; 
+    break;
+
+    case "Comedy": 
+    color = "green"; 
+    break;
+
+    case "Sci-fi": 
+    color = "blue"; 
+    break;
+
+    case "Action": 
+    color = "orange"; 
+    break;
+
+    case "Romance": 
+    color = "pink"; 
+    break;
+
+    default: 
+    color = "yellow"; //for regular star
+}
+lelist.innerHTML += `<p style="color: ${color}">${m.title} (${m.year}) - ${m.genre} <span class="stars">${stars}</span></p>`;
 });
+
+window.onload = displayMovies;
 }
