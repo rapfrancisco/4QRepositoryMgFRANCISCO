@@ -75,14 +75,14 @@
 - Add in css ```position: relative; top: 20px; left: 20px;``` to .sidebar.
 
 - Guided Question: What changed compared to the default static positioning? Try to give different values to top and left or you can change it to bottom, right.
-- it's a part of what determines where it'll be finally positioned.
+- it's a part of what determines where it'll be finally positioned. It looks like it's levitating because it's on top of another box.
 
 ### Step 2 (Fixed):
 
 - Add in css ```position: fixed; bottom: 0; width: 100%;``` to .footer.
 
 - Guided Question: What happens when you scroll the page? Why does the footer behave differently from position relative?
-- 
+- The footer stays at the bottom regardless unlike position relative which is skippable.
 
 ### Step 3 (Absolute):
 
