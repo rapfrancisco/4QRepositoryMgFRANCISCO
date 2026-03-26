@@ -89,7 +89,7 @@
 - Add in css ```position: absolute; top: 66px; left: 200px;``` to .content.
 
 - Guided Question: What is the effect of position: absolute on an element? How is it different from fixed?
-
+- it moves beside the sidebar but with space, it's no longer behind an element. You could think of it as depending as compared to fixed which is at the bottom no matter what.
 ### Step 4 : (Absolute)
 
 - Add in html ```<div class="notice">Notice!</div>``` and include the css below:
