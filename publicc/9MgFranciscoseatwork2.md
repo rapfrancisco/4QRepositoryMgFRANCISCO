@@ -111,8 +111,30 @@
 - The z-index of content is 1, or layer 1, whereas notice's z-index is 2, which means it's on layer 2 and is over content. Swapping the z-index to zero puts it behind all the other boxes.
 
 - Challenge: 
-    * What changes that you have to do on the code that will position .notice box on the top right corner of the .content box? Please write the code on paper as well (both html and css on the part of .notice and .content).
+    * What changes that you have to do on the code that will position .notice box on the top right corner of the .content box? Please write the code on paper 
+    as well (both html and css on the part of .notice and .content).
+    
+    ### .content {
+    ###  background: lightyellow;
+    ###  width: 300px;
+    ###  height: 200px;
+    ###  position: absolute; 
+    ###  top: 66px; 
+    ###  left: 200px;
+    ###  z-index: 1;
+    ### }    
+    ### .notice {
+    ### position: absolute;
+    ### top: 85px;
+    ### left: 225px;
+    ### background: orange;
+    ### padding: 10px;
+    ### z-index: 2; 
+}
+
     * Try to change the position of .content to relative then to fixed. What do you observed each time?
+    ### Changing it to relative changed the position and sent it downwards, and notice is no longer on top of it. Changing its position to relative
+    
     * What do you observe on about the effect of z-index on .notice and .content boxes?
 
 3. Please answer the following reflection questions (15 minutes)
