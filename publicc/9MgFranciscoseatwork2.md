@@ -133,15 +133,20 @@
 }
 
     * Try to change the position of .content to relative then to fixed. What do you observed each time?
-    ### Changing it to relative changed the position and sent it downwards, and notice is no longer on top of it. Changing its position to relative
+    ### Changing it to relative changed the position and sent it downwards, and notice is no longer on top of it. Changing its position to relative made it come back to notice so now it's below notice.
     
     * What do you observe on about the effect of z-index on .notice and .content boxes?
+    ### They initially swap "levels", where one is on top of the other, and for notice's case, it wouldn't be visible.
 
 3. Please answer the following reflection questions (15 minutes)
 
     a. Could you summarize the differences between the CSS position values (static, relative, absolute, fixed)? 
+    ### Static is how it's positioning would be in the first place in regards with the flow of the webpage, the relative position moves it to another place away from the page's content. The fixed position keeps it in place, even if the webpage has a scroll feature, the object would stay wherever it is. Absolute positioning has a dependent/independent object, where the dependent's scales such as its positioning to the left or to the right OF the independent object.
 
     b. How does absolute positioning depend on its parent element?
+      ###  The object basically is dependent on \
+
+      
 
     c. How do you differentiate sticky from fixed (you can research on sticky)?
 
