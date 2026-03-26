@@ -108,6 +108,7 @@
 - Give .content a z-index: 1.
 
 - Guided Question: Why does the notice appear on top of the content? What happens if you swap the z‑index values?
+- The z-index of content is 1, or layer 1, whereas notice's z-index is 2, which means it's on layer 2 and is over content. Swapping the z-index to zero puts it behind all the other boxes.
 
 - Challenge: 
     * What changes that you have to do on the code that will position .notice box on the top right corner of the .content box? Please write the code on paper as well (both html and css on the part of .notice and .content).
