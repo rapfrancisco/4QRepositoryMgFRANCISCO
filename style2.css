@@ -1,12 +1,5 @@
-html {
-  height: 100%;
-  width: 100%;
-}
-
 body{
   font-family: 'Open Sans', sans-serif;
-  font-family: 'Poppins', sans-serif;
-  font-family: 'Roboto', sans-serif;
   background-color: cornsilk;
   color:royalblue;
   padding: 0;
@@ -28,14 +21,16 @@ nav {
 }
 
 nav a {
-    display: block;
+    display: inline-block;
     color: #f2f2f2;
     text-align: center;
     padding: 14px 20px;
     text-decoration: none;
+    position: fixed;
+    top: 0;
 }
 
-nav a :hover {
+nav a:hover {
     background-color: #ddd;
     color: black;
 }
